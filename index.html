@@ -5,13 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>CP Tracker</title>
+    <script>
+        var url = window.location.origin;
+        function myFunction() {
+            setTimeout(() =>
+                window.location.href = `${url}/views/dashboard/dashboard.html`
+                , 1500);
+        }
+                myFunction();
+    </script>
 </head>
+
 
 <body>
 
     <div>
+        <div class="pre-title">
+            <span>
+                <h1>CP tracker</h1>
+            </span>
+            <h1>by</h1>
 
+            <h1>Abrar</h1>
+
+        </div>
         <div>
             <ul>
                 <li></li>
@@ -30,6 +48,33 @@
         margin: 0;
         padding: 0;
         background: rgba(0, 0, 0, 0.9);
+    }
+
+    .pre-title {
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .pre-title>span {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        animation: animate 5s linear infinite;
+    }
+
+    .pre-title>h1 {
+        font-size: 20px;
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        animation: animate 5s linear infinite;
     }
 
     ul {
